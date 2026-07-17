@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Noura Tarek - Flutter Developer & Software Engineer with 2+ years of experience crafting premium, high-performance cross-platform mobile apps using Dart, Flutter, and Clean Architecture.">
+    <meta name="keywords"
+        content="Noura Tarek, Flutter Developer, Mobile App Developer, Dart, Software Engineer, Android Developer, Clean Architecture, BLoC, Firebase, Portfolio">
+    <meta name="author" content="Noura Tarek">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/noura2tarek">
+    <meta property="og:title" content="Noura Tarek | Flutter Developer Portfolio">
+    <meta property="og:description"
+        content="Explore Noura Tarek's portfolio showcasing 2+ years of professional mobile app development experience with Flutter, Firebase, state management (BLoC, Cubit, GetX), and clean architectures.">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dbakezv9c/image/upload/v1779746680/portfolio/photos/elofkluhbza3pidl60lu.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Noura Tarek | Flutter Developer Portfolio">
+    <meta property="twitter:description"
+        content="Explore Noura Tarek's portfolio showcasing 2+ years of professional mobile app development experience with Flutter, Firebase, state management (BLoC, Cubit, GetX), and clean architectures.">
+    <meta property="twitter:image"
+        content="https://res.cloudinary.com/dbakezv9c/image/upload/v1779746680/portfolio/photos/elofkluhbza3pidl60lu.jpg">
+
+    <title>Noura Tarek | Premium Flutter Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Ambient Blobs -->
+    <div class="ambient-blob blob-1" id="ambient-blob-1"></div>
+    <div class="ambient-blob blob-2" id="ambient-blob-2"></div>
+    <div class="ambient-grid"></div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-accent">&lt;</span>Noura<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://drive.google.com/file/d/1xFI8VDw5HcfI4zj3hxwTurFDsxziH-av/view?usp=sharing"
+                    target="_blank" class="btn btn-outline btn-sm" id="btn-resume-header">
+                    <i data-lucide="download"></i> Resume
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="section-container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in" id="hero-badge">
+                    <span class="badge-dot"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title fade-in" id="hero-title">
+                    Hi, I'm <span class="gradient-text">Noura Tarek</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in" id="hero-subtitle">
+                    I am a <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc fade-in" id="hero-desc">
+                    A Software Engineer specializing in crafting high-performance, cross-platform mobile applications
+                    using Dart and Flutter. I bridge the gap between elegant UI designs and clean, scalable code.
+                </p>
+                <div class="hero-actions fade-in" id="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="btn-view-work">
+                        View Projects <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1xFI8VDw5HcfI4zj3hxwTurFDsxziH-av/view?usp=sharing"
+                        target="_blank" class="btn btn-outline" id="btn-download-cv">
+                        <i data-lucide="file-text"></i> Download CV
+                    </a>
+                </div>
+                <div class="hero-socials fade-in" id="hero-socials">
+                    <a href="https://github.com/noura2tarek" target="_blank" aria-label="GitHub" class="social-icon"
+                        id="social-github"><i class="fa-brands fa-github" style="font-size:22px;"></i></a>
+                    <a href="https://www.linkedin.com/in/noura-tarek-a385b5216/" target="_blank" aria-label="LinkedIn"
+                        class="social-icon" id="social-linkedin"><i class="fa-brands fa-linkedin" style="font-size:22px;"></i></a>
+                    <a href="mailto:nourat536@gmail.com" aria-label="Email" class="social-icon" id="social-email"><i
+                            data-lucide="mail"></i></a>
+                    <a href="tel:+201147832612" aria-label="Phone" class="social-icon" id="social-phone"><i
+                            data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container fade-in" id="hero-img-wrapper">
+                <div class="image-glow-ring"></div>
+                <div class="profile-image-wrapper">
+                    <img src="https://res.cloudinary.com/dbakezv9c/image/upload/v1779746680/portfolio/photos/elofkluhbza3pidl60lu.jpg"
+                        alt="Noura Tarek" class="profile-image" id="profile-img">
+                </div>
+                <div class="floating-card card-experience" id="float-experience">
+                    <div class="floating-icon"><i data-lucide="award"></i></div>
+                    <div class="floating-text">
+                        <strong>2+ Years</strong>
+                        <span>Experience</span>
+                    </div>
+                </div>
+                <div class="floating-card card-apps" id="float-apps">
+                    <div class="floating-icon"><i data-lucide="smartphone"></i></div>
+                    <div class="floating-text">
+                        <strong>4+ Production</strong>
+                        <span>Apps Published</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section scroll-reveal" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">My Philosophy & Background</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-info">
+                    <p class="about-text-highlight">
+                        "Building mobile apps feels like solving real-world problems with a tangible outcome — I write
+                        code, and something useful appears on someone's screen. That's what keeps me engaged."
+                    </p>
+                    <p class="about-text">
+                        I hold a Bachelor's Degree in Computer and Systems Engineering from Helwan University. My
+                        education provided a strong foundation in Object-Oriented Programming (OOP), Data Structures,
+                        Algorithms, database fundamentals, and SOLID principles.
+                    </p>
+                    <p class="about-text">
+                        Over the past two years, I have built and maintained several Flutter applications, deploying
+                        them successfully to both the Apple App Store and Google Play Store. I focus on implementing
+                        Clean Architecture (MVC/MVVM), managing complex APIs, optimizing rendering, and writing modular
+                        code.
+                    </p>
+                    <div class="about-stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">04+</span>
+                            <span class="stat-label">Live Apps</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24+</span>
+                            <span class="stat-label">Months Coding</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Clean Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education-card glass-panel">
+                    <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <h4 class="edu-degree">Bachelor's Degree</h4>
+                            <p class="edu-field">Computer and Systems Engineering</p>
+                            <div class="edu-meta">
+                                <span class="edu-inst"><i data-lucide="building"></i> Helwan University</span>
+                                <span class="edu-date"><i data-lucide="calendar"></i> 2018 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-bullets">
+                        <div class="bullet-item">
+                            <i data-lucide="check-circle-2" class="bullet-icon"></i>
+                            <span>Modular & clean codebase following SOLID principles</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i data-lucide="check-circle-2" class="bullet-icon"></i>
+                            <span>Robust state management tailored to application scope</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i data-lucide="check-circle-2" class="bullet-icon"></i>
+                            <span>Excellent performance profiling and responsiveness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section scroll-reveal" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <div class="category-icon mobile-color"><i data-lucide="smartphone"></i></div>
+                        <h3>Mobile & Dart</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Flutter</div>
+                        <div class="skill-tag">Dart</div>
+                        <div class="skill-tag">Mobile App Development</div>
+                        <div class="skill-tag">Android Development</div>
+                        <div class="skill-tag">iOS Development</div>
+                        <div class="skill-tag">Localization</div>
+                        <div class="skill-tag">Google Maps API</div>
+                        <div class="skill-tag">Media Access</div>
+                        <div class="skill-tag">Face ID / Biometrics</div>
+                        <div class="skill-tag">Local Notifications</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <div class="category-icon state-color"><i data-lucide="layers"></i></div>
+                        <h3>Architecture & State</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Clean Architecture</div>
+                        <div class="skill-tag">BLoC / Cubit</div>
+                        <div class="skill-tag">GetX</div>
+                        <div class="skill-tag">Provider</div>
+                        <div class="skill-tag">MVC / MVVM</div>
+                        <div class="skill-tag">SOLID Principles</div>
+                        <div class="skill-tag">OOP</div>
+                        <div class="skill-tag">Data Structures</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <div class="category-icon cloud-color"><i data-lucide="cloud"></i></div>
+                        <h3>Backend & Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">RESTful APIs</div>
+                        <div class="skill-tag">Firebase Auth</div>
+                        <div class="skill-tag">Cloud Firestore</div>
+                        <div class="skill-tag">Firebase Cloud Messaging</div>
+                        <div class="skill-tag">Push Notifications</div>
+                        <div class="skill-tag">Database Fundamentals</div>
+                        <div class="skill-tag">Local Storage (Sqflite, Hive)</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category glass-panel">
+                    <div class="category-header">
+                        <div class="category-icon tools-color"><i data-lucide="git-branch"></i></div>
+                        <h3>Workflows & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Git</div>
+                        <div class="skill-tag">GitHub</div>
+                        <div class="skill-tag">App Store Deployment</div>
+                        <div class="skill-tag">Play Store Deployment</div>
+                        <div class="skill-tag">CI/CD</div>
+                        <div class="skill-tag">Agile / Scrum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section scroll-reveal" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mar 2026 - Present</div>
+                    <div class="timeline-content glass-panel">
+                        <span class="job-badge current">Current</span>
+                        <h3 class="job-title">Flutter Developer</h3>
+                        <h4 class="job-company"><i data-lucide="briefcase"></i> Passos Company</h4>
+                        <p class="job-desc">
+                            Working on mobile application development by implementing features, managing state
+                            efficiently, and resolving performance issues. Responsible for delivering mobile
+                            applications with reliable functionality, including authentication, and real-time features.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Aug 2025 - Feb 2026</div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="job-title">Mobile App Developer</h3>
+                        <h4 class="job-company"><i data-lucide="briefcase"></i> Cyparta</h4>
+                        <p class="job-desc">
+                            Built and maintained 4+ production Flutter applications published on Google Play Store and
+                            Apple App Store. Implemented Face ID authentication, QR code features, video reels
+                            functionality, and full cart management (add/remove items, and checkout process), along with
+                            push notifications (FCM) and local notifications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May 2025 - Jul 2025</div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="job-title">Flutter Developer</h3>
+                        <h4 class="job-company"><i data-lucide="briefcase"></i> SavvyDev</h4>
+                        <p class="job-desc">
+                            Developed an online learning mobile application featuring video-based courses and integrated
+                            payment functionality. Implemented OAuth authentication using dio and RESTful APIs and
+                            managed complex user states using Cubit state management to ensure a smooth and responsive
+                            user experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jul 2024 - Apr 2025</div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="job-title">Software Developer</h3>
+                        <h4 class="job-company"><i data-lucide="briefcase"></i> AITB</h4>
+                        <p class="job-desc">
+                            Developed and maintained cross-platform mobile applications using Flutter with GetX state
+                            management, MVC Architecture, and REST API integration. Implemented secure authentication
+                            flows and REST API integration using Dio. Created and built the CSM (Customer Service
+                            Management) application in collaboration with the back-end team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section scroll-reveal" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="production">Production Apps</button>
+                <button class="filter-btn" data-filter="firebase">Firebase Integration</button>
+                <button class="filter-btn" data-filter="hardware">Hardware / APIs</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel" data-category="production">
+                    <div class="project-img-wrapper">
+                        <img src="https://res.cloudinary.com/dbakezv9c/image/upload/v1779743741/portfolio/photos/ivrb4zktpz1wprzfvlmg.png"
+                            alt="Just-Pretty App Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyparta.levels" target="_blank"
+                                class="overlay-link" title="Play Store Link"><i data-lucide="external-link"></i></a>
+                            <a href="https://apps.apple.com/ph/app/levels-beauty/id6758270474" target="_blank"
+                                class="overlay-link" title="App Store Link"><i data-lucide="smartphone"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-badge-tag">Play Store / App Store</span>
+                        <h3 class="project-card-title">Just-Pretty</h3>
+                        <p class="project-card-desc">
+                            Mobile application for cosmetic and beauty clinics that streamlines booking and clinic
+                            service management. It handles complex schedule allocation, client profile settings, and
+                            localization.
+                        </p>
+                        <div class="project-techs">
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">Localization (AR/EN)</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Cubit State</span>
+                            <span class="tech-tag">Hero Animations</span>
+                            <span class="tech-tag">MVVM Architecture</span>
+                            <span class="tech-tag">Local Notifications</span>
+                            <span class="tech-tag">Reels of Social media</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyparta.levels" target="_blank"
+                                class="project-btn primary"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                            <a href="https://apps.apple.com/ph/app/levels-beauty/id6758270474" target="_blank"
+                                class="project-btn primary"><i class="fa-brands fa-app-store"></i> App Store</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel" data-category="production hardware">
+                    <div class="project-img-wrapper">
+                        <img src="https://res.cloudinary.com/dbakezv9c/image/upload/v1779744270/portfolio/photos/cvjakyawkdwlbuspguhc.png"
+                            alt="Mohadraty-St App Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyparta.mst" target="_blank"
+                                class="overlay-link" title="Play Store Link"><i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-badge-tag">Play Store</span>
+                        <h3 class="project-card-title">Mohadraty-St</h3>
+                        <p class="project-card-desc">
+                            A scheduling manager app for university students with automated lecture attendance tracking.
+                            Integrates biometric Face ID verification and QR code scans to record and cross-check
+                            lecture attendance.
+                        </p>
+                        <div class="project-techs">
+                            <span class="tech-tag">Cubit State</span>
+                            <span class="tech-tag">Face ID</span>
+                            <span class="tech-tag">QR Code</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">Google mlkit face detection</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">FCM</span>
+                            <span class="tech-tag">Local Notifications</span>
+
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyparta.mst" target="_blank"
+                                class="project-btn primary"><i data-lucide="shopping-bag"></i> Get App</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel" data-category="firebase hardware">
+                    <div class="project-img-wrapper">
+                        <img src="https://res.cloudinary.com/dbakezv9c/image/upload/v1779744768/portfolio/photos/ojd4ucmbqjciucj3wls1.jpg"
+                            alt="Checkmate App Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/noura2tarek/GPS_Attendance_System" target="_blank"
+                                class="overlay-link" title="GitHub Code"><i data-lucide="github"></i></a>
+                            <a href="https://drive.google.com/file/d/1rZSctCPtvsrUefSXlA0vvvNztFfisD5H/view?usp=sharing"
+                                target="_blank" class="overlay-link" title="Video Demo"><i data-lucide="play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-badge-tag">GitHub Repo</span>
+                        <h3 class="project-card-title">Checkmate - GPS Attendance System</h3>
+                        <p class="project-card-desc">
+                            A smart, GPS-based check-in/out attendance tracking system for employees. Implemented with
+                            Firestore, custom geolocator APIs for geofencing check-ins, leaves tracking, and profile
+                            administration.
+                        </p>
+                        <div class="project-techs">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Firestore</span>
+                            <span class="tech-tag">BLoC State</span>
+                            <span class="tech-tag">Geofencing</span>
+                            <span class="tech-tag">Geolocator</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/noura2tarek/GPS_Attendance_System" target="_blank"
+                                class="project-btn secondary"><i data-lucide="github"></i> Code</a>
+                            <a href="https://drive.google.com/file/d/1rZSctCPtvsrUefSXlA0vvvNztFfisD5H/view?usp=sharing"
+                                target="_blank" class="project-btn primary"><i data-lucide="video"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-panel" data-category="enterprise">
+                    <div class="project-img-wrapper">
+                        <img src="assets/csm_logo.png" alt="CSM App Logo" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/noura2tarek/csm_mobile_app" target="_blank" class="overlay-link"
+                                title="GitHub Code"><i data-lucide="github"></i></a>
+                            <a href="https://drive.google.com/file/d/10sEMHP1gc7V_sI_115ODhwgkUUEvJUET/view?usp=sharing"
+                                target="_blank" class="overlay-link" title="Video Demo"><i data-lucide="play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-badge-tag">Enterprise App</span>
+                        <h3 class="project-card-title">CSM - Customer Service Management</h3>
+                        <p class="project-card-desc">
+                            A Customer Service Management application. Enables users or employees to request services or
+                            report/complain about incidents. Developed in collaboration with the back-end team.
+                        </p>
+                        <div class="project-techs">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">MVC Architecture</span>
+                            <span class="tech-tag">GetX State</span>
+                            <span class="tech-tag">Multipart Request</span>
+                            <span class="tech-tag">Localization (AR/EN)</span>
+                            <span class="tech-tag">Page Transitions</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://drive.google.com/file/d/10sEMHP1gc7V_sI_115ODhwgkUUEvJUET/view?usp=sharing"
+                                target="_blank" class="project-btn primary"><i data-lucide="video"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-panel" data-category="firebase hardware">
+                    <div class="project-img-wrapper">
+                        <img src="assets/egypt_tourist_guide.jpg" alt="Egypt Tourist Guide App" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/noura2tarek/Egypt_Tourist_Guide" target="_blank"
+                                class="overlay-link" title="GitHub Code"><i data-lucide="github"></i></a>
+                            <a href="https://drive.google.com/file/d/1oX4dv2KObKxJh-E-txqjJbPNxu25VS7B/view?usp=sharing"
+                                target="_blank" class="overlay-link" title="Video Demo"><i data-lucide="play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-badge-tag">Showcase App</span>
+                        <h3 class="project-card-title">Egypt Tourist Guide</h3>
+                        <p class="project-card-desc">
+                            An interactive travel application for exploring attractions in Egypt. Integrates Firebase
+                            Auth for secure sign-in, Firestore for database storage, and Google Maps to link each place
+                            with its geological map location.
+                        </p>
+                        <div class="project-techs">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase Auth</span>
+                            <span class="tech-tag">Firestore</span>
+                            <span class="tech-tag">Google Maps API</span>
+                            <span class="tech-tag">Page Transitions</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/noura2tarek/Egypt_Tourist_Guide" target="_blank"
+                                class="project-btn secondary"><i data-lucide="github"></i> Code</a>
+                            <a href="https://drive.google.com/file/d/1oX4dv2KObKxJh-E-txqjJbPNxu25VS7B/view?usp=sharing"
+                                target="_blank" class="project-btn primary"><i data-lucide="video"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section scroll-reveal" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info-panel">
+                    <h3>Contact Information</h3>
+                    <p class="contact-subtext">Have a project idea, want to discuss app deployment, or looking to add an
+                        experienced Flutter developer to your team? Reach out through any of these channels!</p>
+
+                    <div class="contact-info-list">
+                        <div class="info-card glass-panel">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div class="info-details">
+                                <span>Email Me</span>
+                                <a href="mailto:nourat536@gmail.com">nourat536@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-panel">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div class="info-details">
+                                <span>Call Me</span>
+                                <a href="tel:+201147832612">+20 114 783 2612</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-panel">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="info-details">
+                                <span>Location</span>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel glass-panel">
+                    <form id="contact-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="Project discussion">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" required
+                                placeholder="Tell me about your app idea..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            Send Message <i data-lucide="send"></i>
+                        </button>
+
+                        <!-- Success Message Toast (hidden by default) -->
+                        <div class="form-feedback hidden" id="form-feedback">
+                            <i data-lucide="check-circle"></i>
+                            <span>Message sent successfully! I will reply shortly.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="footer-logo">&lt;Noura<span class="logo-accent">.dev /&gt;</span></p>
+            <p class="copyright">Designed & Built by Noura Tarek © 2026. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/noura2tarek" target="_blank" class="footer-link"><i
+                        data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/noura-tarek-a385b5216/" target="_blank" class="footer-link"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="mailto:nourat536@gmail.com" class="footer-link"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Entry -->
+    <script src="script.js"></script>
+</body>
+
+</html>
