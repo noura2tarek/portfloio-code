@@ -927,7 +927,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -936,6 +936,7 @@ section {
     flex-direction: column;
     overflow: hidden;
     height: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .project-img-wrapper {
@@ -1043,6 +1044,7 @@ section {
     gap: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 16px;
+    flex-wrap: wrap;
 }
 
 .project-btn {
@@ -1056,6 +1058,8 @@ section {
     font-weight: 600;
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
+    min-width: 0;
+    white-space: nowrap;
 }
 
 .project-btn.primary {
@@ -1321,6 +1325,11 @@ section {
     .image-glow-ring { width: 340px; height: 340px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1400,4 +1409,232 @@ section {
         flex-direction: column;
         text-align: center;
     }
+    
+    /* Projects responsive - tablet */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .project-filters {
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.82rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    
+    .project-body {
+        padding: 20px;
+    }
+    
+    .project-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-card-desc {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+    
+    .project-techs {
+        gap: 6px;
+        margin-bottom: 18px;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+    
+    /* Contact responsive */
+    .contact-form-panel {
+        padding: 25px;
+    }
 }
+
+@media (max-width: 480px) {
+    section { padding: 45px 0; }
+    
+    .section-container {
+        padding: 0 16px;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    .section-header {
+        margin-bottom: 35px;
+    }
+    
+    .hero-title { font-size: 2.2rem; }
+    .hero-subtitle { font-size: 1.2rem; }
+    .hero-desc { font-size: 0.95rem; }
+    
+    .profile-image-wrapper { width: 220px; height: 220px; }
+    .image-glow-ring { width: 260px; height: 260px; }
+    
+    .floating-card {
+        padding: 8px 14px;
+        gap: 10px;
+    }
+    
+    .floating-text strong {
+        font-size: 0.9rem;
+    }
+    
+    .floating-text span {
+        font-size: 0.65rem;
+    }
+    
+    .floating-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Projects responsive - mobile */
+    .project-filters {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+    
+    .filter-btn {
+        padding: 7px 14px;
+        font-size: 0.78rem;
+        border-radius: var(--radius-sm);
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-img-wrapper {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-body {
+        padding: 16px;
+    }
+    
+    .project-card-title {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .project-card-desc {
+        font-size: 0.85rem;
+        margin-bottom: 14px;
+    }
+    
+    .project-techs {
+        gap: 5px;
+        margin-bottom: 14px;
+    }
+    
+    .tech-tag {
+        font-size: 0.72rem;
+        padding: 3px 7px;
+    }
+    
+    .project-actions {
+        gap: 8px;
+        padding-top: 12px;
+    }
+    
+    .project-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* About responsive */
+    .about-text-highlight {
+        font-size: 1.1rem;
+    }
+    
+    .about-text {
+        font-size: 0.95rem;
+    }
+    
+    .about-education-card {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    /* Timeline responsive */
+    .timeline {
+        padding-left: 25px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .job-title {
+        font-size: 1.15rem;
+    }
+    
+    .job-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .job-desc {
+        font-size: 0.88rem;
+    }
+    
+    /* Contact responsive */
+    .contact-form-panel {
+        padding: 20px;
+    }
+    
+    .contact-info-panel h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-subtext {
+        font-size: 0.95rem;
+    }
+    
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .info-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .info-details a,
+    .info-details p {
+        font-size: 0.9rem;
+        word-break: break-all;
+    }
+    
+    /* Header responsive */
+    .header-container {
+        padding: 12px 16px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .btn-sm {
+        padding: 6px 12px;
+        font-size: 0.78rem;
+    }
+}
+
